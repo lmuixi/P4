@@ -46,9 +46,6 @@ else
 fi
 
 # Main command for feature extraction
-#mateixa ordre, canviem el orden de LPC pel cepstrum i també l'extensió de l'arxiu temporal
-#ara queden guardats a $base.lpcc 
-#mirar pq hay un erros aqui
 sox $inputfile -t raw -e signed -b 16 - | $X2X +sf | $FRAME -l 240 -p 80 | $WINDOW -l 240 -L 240 |
 	$LPC -l 240 -m $lpc_order | $LPCC -m $lpc_order -M $lpcc_order > $base.lpcc || exit 1
    
