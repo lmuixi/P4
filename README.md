@@ -43,7 +43,7 @@ Por tanto, vemos que:
 - -t : especifica el formato de salida del fichero de audio.
 - -e : especifica el tipo de codificación de los datos.
 - -b : especifica el número de bits por muestra.
-- - : especifica que la salida debe ir a la salida estándar (stdout) en lugar
+- '-' : especifica que la salida debe ir a la salida estándar (stdout) en lugar
 de a un archivo.
 - $X2X : esta herramienta nos permite la conversión entre distintos formatos
 de datos. En nuestro programa, pasamos de datos short a float (+sf).
